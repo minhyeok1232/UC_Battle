@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\U06_Battle.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{25DC59E6-EAF7-4971-AA07-A648D0ADA182}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\U06_Battle.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\U06_BattleEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{651EC9AD-2A4E-43F8-A717-0FB6EAD819CF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\U06_Battle">
+      <UniqueIdentifier>{A4D7AF91-E5B1-45FE-999B-02870E61ED83}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\U06_Battle\Global.h">
+      <Filter>Source\U06_Battle</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\U06_Battle\U06_Battle.Build.cs">
+      <Filter>Source\U06_Battle</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\U06_Battle\U06_Battle.cpp">
+      <Filter>Source\U06_Battle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\U06_Battle.h">
+      <Filter>Source\U06_Battle</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\U06_BattleGameModeBase.cpp">
+      <Filter>Source\U06_Battle</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\U06_BattleGameModeBase.h">
+      <Filter>Source\U06_Battle</Filter>
+    </ClInclude>
+    <Filter Include="Source\U06_Battle\Characters">
+      <UniqueIdentifier>{9C1A35A4-7E88-45AC-A1D8-14304D4A2F5C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\U06_Battle\Characters\CAnimInstance.cpp">
+      <Filter>Source\U06_Battle\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Characters\CAnimInstance.h">
+      <Filter>Source\U06_Battle\Characters</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Characters\CAnimInstance_Bow.cpp">
+      <Filter>Source\U06_Battle\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Characters\CAnimInstance_Bow.h">
+      <Filter>Source\U06_Battle\Characters</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Characters\CEnemy.cpp">
+      <Filter>Source\U06_Battle\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Characters\CEnemy.h">
+      <Filter>Source\U06_Battle\Characters</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Characters\CPlayer.cpp">
+      <Filter>Source\U06_Battle\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Characters\CPlayer.h">
+      <Filter>Source\U06_Battle\Characters</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Characters\ICharacter.cpp">
+      <Filter>Source\U06_Battle\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Characters\ICharacter.h">
+      <Filter>Source\U06_Battle\Characters</Filter>
+    </ClInclude>
+    <Filter Include="Source\U06_Battle\Components">
+      <UniqueIdentifier>{D0021D88-7229-4ECE-B840-7C88202559B5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\U06_Battle\Components\CAIBehaviorComponent.cpp">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Components\CAIBehaviorComponent.h">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Components\CMontageComponent.cpp">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Components\CMontageComponent.h">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Components\CMovementComponent.cpp">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Components\CMovementComponent.h">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Components\CStateComponent.cpp">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Components\CStateComponent.h">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Components\CStatusComponent.cpp">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Components\CStatusComponent.h">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Components\CWeaponComponent.cpp">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Components\CWeaponComponent.h">
+      <Filter>Source\U06_Battle\Components</Filter>
+    </ClInclude>
+    <Filter Include="Source\U06_Battle\Notifies">
+      <UniqueIdentifier>{D9E9A57B-5529-42B4-822F-427C25DBF244}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\CAnimNotifyState_CameraAnim.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\CAnimNotifyState_CameraAnim.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\CAnimNotifyState_Collision.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\CAnimNotifyState_Collision.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\CAnimNotifyState_Combo.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\CAnimNotifyState_Combo.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\CAnimNotifyState_Equip.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\CAnimNotifyState_Equip.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\CAnimNotifyState_SubAction.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\CAnimNotifyState_SubAction.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\CAnimNotify_BeginAction.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\CAnimNotify_BeginAction.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\CAnimNotify_CameraShake.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\CAnimNotify_CameraShake.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\CAnimNotify_EndAction.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\CAnimNotify_EndAction.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\CAnimNotify_EndState.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\CAnimNotify_EndState.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\CAnimNotify_End_BowString.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\CAnimNotify_End_BowString.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Notifies\MyAnimNotifyState_SubAction.cpp">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Notifies\MyAnimNotifyState_SubAction.h">
+      <Filter>Source\U06_Battle\Notifies</Filter>
+    </ClInclude>
+    <Filter Include="Source\U06_Battle\Utilities">
+      <UniqueIdentifier>{08F2C575-CC43-46DF-9866-0D20B48051FD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\U06_Battle\Utilities\CHelpers.h">
+      <Filter>Source\U06_Battle\Utilities</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Utilities\CLog.cpp">
+      <Filter>Source\U06_Battle\Utilities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Utilities\CLog.h">
+      <Filter>Source\U06_Battle\Utilities</Filter>
+    </ClInclude>
+    <Filter Include="Source\U06_Battle\Weapons">
+      <UniqueIdentifier>{2FABE3FF-0AC0-4065-8C3C-04E969A4F1C2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\CAttachment.cpp">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\CAttachment.h">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\CDoAction.cpp">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\CDoAction.h">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\CEquipment.cpp">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\CEquipment.h">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\CSubAction.cpp">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\CSubAction.h">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\CWeaponAsset.cpp">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\CWeaponAsset.h">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\CWeaponData.cpp">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\CWeaponData.h">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\CWeaponStructures.cpp">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\CWeaponStructures.h">
+      <Filter>Source\U06_Battle\Weapons</Filter>
+    </ClInclude>
+    <Filter Include="Source\U06_Battle\Weapons\AddOns">
+      <UniqueIdentifier>{9BFEC1A4-6CEA-410A-A3E9-7A941F622A6A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\AddOns\CArrow.cpp">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\AddOns\CArrow.h">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\AddOns\CAura.cpp">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\AddOns\CAura.h">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\AddOns\CCameraModifier.cpp">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\AddOns\CCameraModifier.h">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\AddOns\CGhostTrail.cpp">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\AddOns\CGhostTrail.h">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\AddOns\CRotate_Object.cpp">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\AddOns\CRotate_Object.h">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\AddOns\CThornObject.cpp">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\AddOns\CThornObject.h">
+      <Filter>Source\U06_Battle\Weapons\AddOns</Filter>
+    </ClInclude>
+    <Filter Include="Source\U06_Battle\Weapons\Attachments">
+      <UniqueIdentifier>{17F7BE0A-E21F-4162-92E2-E915C2F1115F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\Attachments\CAttachment_Bow.cpp">
+      <Filter>Source\U06_Battle\Weapons\Attachments</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\Attachments\CAttachment_Bow.h">
+      <Filter>Source\U06_Battle\Weapons\Attachments</Filter>
+    </ClInclude>
+    <Filter Include="Source\U06_Battle\Weapons\DoActions">
+      <UniqueIdentifier>{B5BF5DE8-7C55-4EC8-B886-A9E79F6B03AC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\DoActions\CDoAction_Around.cpp">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\DoActions\CDoAction_Around.h">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\DoActions\CDoAction_Bow.cpp">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\DoActions\CDoAction_Bow.h">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\DoActions\CDoAction_Combo.cpp">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\DoActions\CDoAction_Combo.h">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\DoActions\CDoAction_Tornado.cpp">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\DoActions\CDoAction_Tornado.h">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\DoActions\CDoAction_Warp.cpp">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\DoActions\CDoAction_Warp.h">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\DoActions\MyObject.cpp">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\DoActions\MyObject.h">
+      <Filter>Source\U06_Battle\Weapons\DoActions</Filter>
+    </ClInclude>
+    <Filter Include="Source\U06_Battle\Weapons\SubActions">
+      <UniqueIdentifier>{2E6BFCC3-785D-4FCF-8C97-8798B54129AF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Around.cpp">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Around.h">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Bow.cpp">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Bow.h">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Fist.cpp">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Fist.h">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Hammer.cpp">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Hammer.h">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Sword.cpp">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Sword.h">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Warp.cpp">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\U06_Battle\Weapons\SubActions\CSubAction_Warp.h">
+      <Filter>Source\U06_Battle\Weapons\SubActions</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
