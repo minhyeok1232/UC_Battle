@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "U06_Battle",
+			"Path": "C:\\Unreal\\U06_Battle_Bow_종료\\Source\\U06_Battle.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "U06_BattleEditor",
+			"Path": "C:\\Unreal\\U06_Battle_Bow_종료\\Source\\U06_BattleEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
