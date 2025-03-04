@@ -1,0 +1,5 @@
+---,Index,Type,Montage,PlayRate
+1,"0","BackStep","AnimMontage'/Game/Character/Montages/Common/BackStep_Montage.BackStep_Montage'","1.000000"
+2,"0","Roll","AnimMontage'/Game/Character/Montages/Common/Roll_Avoid_Montage.Roll_Avoid_Montage'","1.000000"
+3,"0","Hit","AnimMontage'/Game/Character/Montages/Common/HitReaction_Montage.HitReaction_Montage'","1.000000"
+4,"0","Dead","AnimMontage'/Game/Character/Montages/Common/Enemy_DeadFall_Montage.Enemy_DeadFall_Montage'","1.000000"
