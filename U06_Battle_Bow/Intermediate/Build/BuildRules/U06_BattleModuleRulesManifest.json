@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\Unreal\\U06_Battle_Bow\\Source\\U06_Battle\\U06_Battle.Build.cs",
-		"C:\\Unreal\\U06_Battle_Bow\\Source\\U06_Battle.Target.cs",
-		"C:\\Unreal\\U06_Battle_Bow\\Source\\U06_BattleEditor.Target.cs"
-	],
-	"EngineVersion": "4.26.2"
-}
