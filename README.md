@@ -37,7 +37,7 @@ U06_Battle.uproject 우 클릭 후,
 
 ### 4️⃣ IDE
 현재 사용하는 IDE 환경에서 소스코드가 표시됩니다.
-솔루션 빌드 (Ctrl + B) 완료 후,
+솔루션 빌드 (Ctrl + B) 완료 후, 
 ✅ U06_Battle.uproject 클릭하여 실행
 
 
