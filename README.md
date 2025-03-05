@@ -58,26 +58,6 @@ U06_Battle.uproject 우 클릭 후,
 ![image](https://github.com/user-attachments/assets/b1a34e98-9cdb-46c9-850e-4ba462f5a062)
 
 ## 🔄 진행 및 개선 사항
-### ✨ C++ 와 블루프린트 연계 
-- `BlueprintNativeEvent`, `BlueprintImplementableEvent`, `BlueprintCallable`을 활용하여 C++과 Blueprint 사이에서 연동하였습니다.
-  - 연산이 많이 필요한 핵심 로직은 C++로 처리하여 성능 최적화
-  - 시각적 연출 및 애니메이션 등은 Blueprint로 구현
- <details>
-  <summary>🎇 언리얼 블루프린트 함수 유형 정리 </summary>
-   
-   #### BlueprintCallable :
-   - C++ 로 작성, 블루프린트 그래프에서 호출 가능하지만 변경이나 덮어쓰기는 불가능합니다. (ex.수학 함수)
-
-   #### BlueprintImplementableEvent :
-   - 헤더 파일(.h) 에 추가되지만, 함수 본문은 C++ 가 아닌 블루프린트 그래프에서 작성됩니다.
-   - 표준 동작이 없는 이벤트를 자유롭게 변경할 수 있도록 하는 경우에 사용합니다. (ex.각 보스마다 다른 보상을 줌)
-     
-   #### BlueprintNativeEvent :
-   - BlueprintCallable 과 BlueprintImplementableEvent 의 조합형으로 C++ 로 작성되었지만, 블루프린트에서 보조 또는 대체 가능합니다.
-   - BlueprintNativeEvent 를 사용할 때는 함수 마지막에 "_Implementation" 을 붙여야 합니다.
-     ![image](https://github.com/user-attachments/assets/cd7720a0-b428-43c8-92e6-a17a47808a90)
-
-   </details>
 
 ### 🔀 멀티 스레드 적용
 멀티 스레드를 사용함으로써 게임 시작과 동시에 별도의 스레드에서 모든 씬(Scene)을 미리 로드합니다.
@@ -108,12 +88,26 @@ X, Y 축에 정렬된 직사각형 충돌 방식으로, 회전이 없으며 �
 
 
 ## ⚡ 프로젝트 최적화 과정
-### ImGUI를 통한 실시간 성능 모니터링을 통한 최적화
-ImGUI를 활용하여 FPS(Frame Per Second)를 실시간으로 표시하여 성능을 모니터링을 할 수 있게 하였습니다. <br>
-![Image](https://github.com/user-attachments/assets/872d2f93-75cb-425d-acc6-a99eff270541)
-<br>
-디버깅 창을 직접 구현하여 코드 수정 없이 오브젝트를 조정하고 실시간으로 테스트할 수 있는 환경을 구축하였습니다.
-![Image](https://github.com/user-attachments/assets/341046f1-ce83-47f2-9182-465c58f0827d)
+### ✨ C++ 와 블루프린트 연계 
+- `BlueprintNativeEvent`, `BlueprintImplementableEvent`, `BlueprintCallable`을 활용하여 C++과 Blueprint 사이에서 연동하였습니다.
+  - 연산이 많이 필요한 핵심 로직은 C++로 처리하여 성능 최적화
+  - 시각적 연출 및 애니메이션 등은 Blueprint로 구현
+ <details>
+  <summary>🎇 언리얼 블루프린트 함수 유형 정리 </summary>
+   
+   #### BlueprintCallable :
+   - C++ 로 작성, 블루프린트 그래프에서 호출 가능하지만 변경이나 덮어쓰기는 불가능합니다. (ex.수학 함수)
+
+   #### BlueprintImplementableEvent :
+   - 헤더 파일(.h) 에 추가되지만, 함수 본문은 C++ 가 아닌 블루프린트 그래프에서 작성됩니다.
+   - 표준 동작이 없는 이벤트를 자유롭게 변경할 수 있도록 하는 경우에 사용합니다. (ex.각 보스마다 다른 보상을 줌)
+     
+   #### BlueprintNativeEvent :
+   - BlueprintCallable 과 BlueprintImplementableEvent 의 조합형으로 C++ 로 작성되었지만, 블루프린트에서 보조 또는 대체 가능합니다.
+   - BlueprintNativeEvent 를 사용할 때는 함수 마지막에 "_Implementation" 을 붙여야 합니다.
+     ![image](https://github.com/user-attachments/assets/cd7720a0-b428-43c8-92e6-a17a47808a90)
+
+   </details>
 
 <br><br>
 
