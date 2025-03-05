@@ -127,21 +127,22 @@ X, Y 축에 정렬된 직사각형 충돌 방식으로, 회전이 없으며 �
 
 ### 데이터 에셋을 활용
 #### CWeaponStructures.h
-![image](https://github.com/user-attachments/assets/759f1a4d-3a63-4971-848f-f031a4f6f682)
+![image](https://github.com/user-attachments/assets/759f1a4d-3a63-4971-848f-f031a4f6f682)<br>
 각 무기마다 데이터 구조체를 사용하여 저장합니다.
 - 하드코딩 없이 구조체를 통해 무기 데이터를 효율적으로 관리
 - 이 구조체를 기반으로 여러 개의 무기 데이터를 설정 가능
 
 #### UCWeaponAsset.h
-![image](https://github.com/user-attachments/assets/9826cdde-0542-40d3-a524-b7cc3d6aceed)
+![image](https://github.com/user-attachments/assets/9826cdde-0542-40d3-a524-b7cc3d6aceed)<br>
 UDataAsset을 활용한 무기 데이터를 저장합니다.
 - UCWeaponAsset 클래스는 UDataAsset을 상속받아 무기 데이터를 하나의 데이터 에셋으로 저장
 - FWeaponData 구조체를 포함하여 무기별 설정(공격력, 범위, 애니메이션 등)을 데이터로 관리
 - 데이터 에셋을 활용하여 무기 밸런스 수정 시 코드 수정없이 데이터 에셋 조정으로 변경 가능
 
 #### Data Asset(DA)
-![image](https://github.com/user-attachments/assets/f3ef49ea-c5b3-4774-8858-357ec79cb2f6)
+![image](https://github.com/user-attachments/assets/f3ef49ea-c5b3-4774-8858-357ec79cb2f6)<br>
 각 무기별로 데이터 에셋을 생성합니다.
+
 
 
 <br><br>
