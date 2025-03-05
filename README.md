@@ -60,8 +60,8 @@ U06_Battle.uproject 우 클릭 후,
 ## 🔄 진행 및 개선 사항
 ### ✨ C++ 와 블루프린트 연계 
 - `BlueprintNativeEvent`, `BlueprintImplementableEvent`, `BlueprintCallable`을 활용하여 C++과 Blueprint 사이에서 연동하였습니다.
--   연산이 많이 필요한 핵심 로직은 C++로 처리하여 성능 최적화
--   시각적 연출 및 애니메이션 등은 Blueprint로 구현
+  - 연산이 많이 필요한 핵심 로직은 C++로 처리하여 성능 최적화
+  - 시각적 연출 및 애니메이션 등은 Blueprint로 구현
 ![Image]
 
 ### 🔀 멀티 스레드 적용
