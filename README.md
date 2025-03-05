@@ -36,8 +36,8 @@ U06_Battle.uproject 우 클릭 후,
 [클릭하기](https://velog.io/@hani345/Unreal%EA%B3%BC-C%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0)
 
 ### 4️⃣ IDE
-현재 사용하는 IDE 환경에서 소스코드가 표시됩니다.
-솔루션 빌드 (Ctrl + B) 완료 후, 
+현재 사용하는 IDE 환경에서 소스코드가 표시됩니다.<br>
+솔루션 빌드 (Ctrl + B) 완료 후,<br>
 ✅ U06_Battle.uproject 클릭하여 실행
 
 
