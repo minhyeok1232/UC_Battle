@@ -59,11 +59,25 @@ U06_Battle.uproject 우 클릭 후,
 
 ## 🔄 진행 및 개선 사항
 
-### 🔀 멀티 스레드 적용
-멀티 스레드를 사용함으로써 게임 시작과 동시에 별도의 스레드에서 모든 씬(Scene)을 미리 로드합니다.
-- 기존 싱글스레드 방식 대비 약 `40%` 로딩 시간 단축
-- FPS 모니터링 결과 초기 로딩 중 프레임 드랍을 최대 `50%`까지 감소
-![Image](https://github.com/user-attachments/assets/563cd473-a65b-491f-b662-d417873f2c67)
+### 🔀 애니메이션 시스템
+- BS(Blend Space)를 활용하여 걷기, 뛰기, 달리기 등 자연스럽게 전환하였습니다.
+- Montage 및 Notify 시스템을 활용하여 애니메이션의 특정 타이밍을 조정하였습니다.
+#### Animation Montage에 특정 시점에 Notify를 조정
+![image](https://github.com/user-attachments/assets/7bfad7e6-4812-43b6-91a6-e62bf2a667d2)
+![image](https://github.com/user-attachments/assets/08bbc26c-610d-4808-9114-0b47045459cc)
+
+
+#### 무기별 애니메이션 로직 분리
+- 일반 무기는 CAnimInstance에서 기본 상태 머신을 통해 관리하였습니다.
+- Bow는 CAnimInstance_Bow에서 별도의 애니메이션 레이어를 적용하여 특수 동작을 구현하였습니다.
+![image](https://github.com/user-attachments/assets/59b06b8b-e2da-4640-9615-5965b3b568dc)
+
+#### Aim Offset을 활용한 상체 애니메이션 보정
+AO(Aim Offset)을 적용하여 캐릭터가 특정 방향을 바라볼 때 상체 애니메이션을 자연스럽게 조정하였습니다.
+조준 시(Bow_Aim) Blend Space와 결합(특정 Bone)하여 AO(Aim Offset)을 적용하였습니다.
+![image](https://github.com/user-attachments/assets/fcc21486-9f06-4afb-901f-3fdd6021a540)
+
+
 
 ### 🤖 AI 시스템 개선
 `AStar` 알고리즘을 활용하여 최적의 경로 탐색을 구현하였습니다.
@@ -111,19 +125,24 @@ X, Y 축에 정렬된 직사각형 충돌 방식으로, 회전이 없으며 �
 
 <br><br>
 
-### HLSL을 활용한 그래픽 최적화
-HLSL 언어를 사용한 DirectX 셰이더 프로그래밍을 적용하여 그래픽 렌더링 성능을 최적화하였습니다.
-![image](https://github.com/user-attachments/assets/278a6da2-2619-4934-b7fe-93797be35426)
+### 데이터 에셋을 활용
+#### CWeaponStructures.h
+![image](https://github.com/user-attachments/assets/759f1a4d-3a63-4971-848f-f031a4f6f682)
+각 무기마다 데이터 구조체를 사용하여 저장합니다.
+- 하드코딩 없이 구조체를 통해 무기 데이터를 효율적으로 관리
+- 이 구조체를 기반으로 여러 개의 무기 데이터를 설정 가능
 
-![image](https://github.com/user-attachments/assets/0e8eab94-d634-4e4e-b7b5-c0f056e7d38c)
-1. 정점 설정 및 Shader 참조
-- Vertex Shader를 이용하여 충돌 박스를 생성하였습니다.
-- DirectX에서 셰이더 코드를 활용하여 정점(Vertices)처리를 하였습니다.
-2. HLSL의 World 행렬 적용
-- 월드(World), 뷰(View), 프로젝션(Projection) 행렬을 적용하여 충돌 박스를 좌표로 변환하였습니다.
-3. HLSL의 Pixel Shader(Color) 적용
-- 픽셀 셰이더(Pixel Shader)를 활용하여 충돌 감지 시 색상 변화를 적용하였습니다.
-- 충돌 상태에 따라 색상이 변화하도록 셰이더 로직을 구현하였습니다.
+#### UCWeaponAsset.h
+![image](https://github.com/user-attachments/assets/9826cdde-0542-40d3-a524-b7cc3d6aceed)
+UDataAsset을 활용한 무기 데이터를 저장합니다.
+- UCWeaponAsset 클래스는 UDataAsset을 상속받아 무기 데이터를 하나의 데이터 에셋으로 저장
+- FWeaponData 구조체를 포함하여 무기별 설정(공격력, 범위, 애니메이션 등)을 데이터로 관리
+- 데이터 에셋을 활용하여 무기 밸런스 수정 시 코드 수정없이 데이터 에셋 조정으로 변경 가능
+
+#### Data Asset(DA)
+![image](https://github.com/user-attachments/assets/f3ef49ea-c5b3-4774-8858-357ec79cb2f6)
+각 무기별로 데이터 에셋을 생성합니다.
+
 
 <br><br>
 
