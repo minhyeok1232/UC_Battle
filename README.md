@@ -75,7 +75,8 @@ U06_Battle.uproject 우 클릭 후,
    #### BlueprintNativeEvent :
    - BlueprintCallable 과 BlueprintImplementableEvent 의 조합형으로 C++ 로 작성되었지만, 블루프린트에서 보조 또는 대체 가능합니다.
    - BlueprintNativeEvent 를 사용할 때는 함수 마지막에 "_Implementation" 을 붙여야 합니다.
-   
+   ![image](https://github.com/user-attachments/assets/cd7720a0-b428-43c8-92e6-a17a47808a90)
+
    </details>
 
 ### 🔀 멀티 스레드 적용
