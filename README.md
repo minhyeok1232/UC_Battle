@@ -64,14 +64,15 @@ U06_Battle.uproject 우 클릭 후,
   - 시각적 연출 및 애니메이션 등은 Blueprint로 구현
  <details>
   <summary>🎇 언리얼 블루프린트 함수 유형 정리 </summary>
-      BlueprintCallable :
+   
+   #### BlueprintCallable :
    C++ 로 작성, 블루프린트 그래프에서 호출 가능하지만 변경이나 덮어쓰기는 불가능(ex.수학 함수)
 
-   BlueprintImplementableEvent :
+   #### BlueprintImplementableEvent :
    헤더 파일(.h) 에 추가되지만, 함수 본문은 C++ 가 아닌 블루프린트 그래프에서 작성됨.
    표준 동작이 없는 이벤트를 자유롭게 변경할 수 있도록 하는 경우에 사용. (ex.각 보스마다 다른 보상을 줌)
    
-   BlueprintNativeEvent :
+   #### BlueprintNativeEvent :
    BlueprintCallable 과 BlueprintImplementableEvent 의 조합형.C++ 로 작성되었지만, 블루프린트에서 보조 또는 대체 가능함.
    BlueprintNativeEvent 를 사용할 때는 함수 마지막에 "_Implementation" 을 붙여야 함.
    
