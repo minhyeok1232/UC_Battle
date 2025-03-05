@@ -15,7 +15,10 @@ Unreal 4.26 기반의 3D 배틀 게임입니다.
 - **장르** : 3D Battle Game
 - **Engine** : Unreal Engine 4.26
 - **IDE** : JetBrains Rider
-- **목적** : 
+- **목적** :
+  - 무기 및 전투 시스템의 확장성을 고려한 클래스 구조 설계
+  - ABP(애니메이션 블루프린트)와, Animation Notify를 통해 전투 이펙트 및 상태 전환을 학습
+  - BP(블루프린트)에 컴퍼넌트를 추가하여 모듈화된 구조를 설계
 
 <details>
   <summary>🎇 프로젝트 실행 방법</summary>
@@ -55,11 +58,11 @@ U06_Battle.uproject 우 클릭 후,
 ![image](https://github.com/user-attachments/assets/b1a34e98-9cdb-46c9-850e-4ba462f5a062)
 
 ## 🔄 진행 및 개선 사항
-### ✨ 셰이더 프로그래밍 개선
-HLSL(Vertex/Pixel Shader)과 행렬(Matrix)를 이용하여 충돌 박스를 구현하였습니다.
-- HLSL : Pixel 색상을 변경하여 충돌 상태를 `시각적`으로 표현하였습니다.
-- 행렬 : 충돌 박스의 위치, 크기, 회전을 적용하면서 `좌표 변환`을 수행하였습니다.
-![Image](https://github.com/user-attachments/assets/e36bf54e-a4c0-4963-867c-379d0b410d94)
+### ✨ C++ 와 블루프린트 연계 
+- `BlueprintNativeEvent`, `BlueprintImplementableEvent`, `BlueprintCallable`을 활용하여 C++과 Blueprint 사이에서 연동하였습니다.
+-   연산이 많이 필요한 핵심 로직은 C++로 처리하여 성능 최적화
+-   시각적 연출 및 애니메이션 등은 Blueprint로 구현
+![Image]
 
 ### 🔀 멀티 스레드 적용
 멀티 스레드를 사용함으로써 게임 시작과 동시에 별도의 스레드에서 모든 씬(Scene)을 미리 로드합니다.
