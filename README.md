@@ -74,8 +74,8 @@ U06_Battle.uproject 우 클릭 후,
     BlueprintNativeEvent :
     BlueprintCallable 과 BlueprintImplementableEvent 의 조합형.C++ 로 작성되었지만, 블루프린트에서 보조 또는 대체 가능함.
     BlueprintNativeEvent 를 사용할 때는 함수 마지막에 "_Implementation" 을 붙여야 함.
+    
     </details>
-![Image]
 
 ### 🔀 멀티 스레드 적용
 멀티 스레드를 사용함으로써 게임 시작과 동시에 별도의 스레드에서 모든 씬(Scene)을 미리 로드합니다.
