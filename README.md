@@ -25,10 +25,19 @@ Unreal 4.26 기반의 3D 배틀 게임입니다.
   git clone https://github.com/minhyeok1232/UC_Battle.git
 ```
 ### 2️⃣ 파일 경로
-UC_Battle/U06_Battle_Bow 경로로 이동
+UC_Battle/U06_Battle_Bow 경로로 이동합니다.
 
 ### 3️⃣ 실행 파일
-U06_Battle.uproject 우 클릭 후  >>> 벨로그 안들어가진다 이따가 확인
+U06_Battle.uproject 우 클릭 후, 'Generate Visual Studio project files' 클릭하게 되면,
+
+### 만약에, 'Generate Visual Studio project files'가 뜨지 않으면?
+https://velog.io/@hani345/Unreal%EA%B3%BC-C%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0 참고
+
+### 4️⃣ IDE
+현재 작업중인 IDE환경으로 소스코드 파일이 나옵니다.
+이후, 솔루션 빌드(Ctrl + B)를 마치고 U06_Battle.uproject 클릭 시 실행이 됩니다.
+
+
 
 </details>
 
