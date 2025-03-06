@@ -58,12 +58,6 @@ U06_Battle.uproject 우 클릭 후,
 ## 🔄 진행 및 개선 사항
 
 ### 🔀 애니메이션 시스템
-- Montage 및 Notify 시스템을 활용하여 애니메이션의 특정 타이밍을 조정하였습니다.
-#### Animation Montage에 특정 시점에 Notify를 조정
-![image](https://github.com/user-attachments/assets/7bfad7e6-4812-43b6-91a6-e62bf2a667d2)
-![image](https://github.com/user-attachments/assets/08bbc26c-610d-4808-9114-0b47045459cc)
-
-
 #### 애니메이션 시스템 및 무기별 애니메이션 로직 분리
 
 <details>
@@ -99,11 +93,49 @@ U06_Battle.uproject 우 클릭 후,
 
 </details>
 
-### 🤖 AI 시스템 개선
-`AStar` 알고리즘을 활용하여 최적의 경로 탐색을 구현하였습니다.
-- 격자 시스템으로 적 AI의 이동 가능 영역을 관리
-- 실시간으로 경로를 재계산하여 동적 장애물 변화에도 유연하게 대응할 수 있도록 AI 이동 로직을 개선
-![Image](https://github.com/user-attachments/assets/2a3a8b97-b556-4194-829d-876009aedce4)
+#### Animation Montage에 특정 시점에 Notify를 조정
+
+<details>
+  <summary>🎇 자세히 보기 </summary>
+
+- Montage를 활용하여 애니메이션의 특정 타이밍을 조정하였습니다.
+![image](https://github.com/user-attachments/assets/7bfad7e6-4812-43b6-91a6-e62bf2a667d2)
+- Animation Notify를 통해 '특정 프레임'에서 동작을 실행할 수 있습니다. 
+![image](https://github.com/user-attachments/assets/08bbc26c-610d-4808-9114-0b47045459cc)
+
+</details>
+
+### 🤖 무기 로직 시스템 개선
+
+<details>
+  <summary>🎇 자세히 보기 </summary>
+
+  1️⃣ 무기 상태 관리 (CWeaponComponent)
+![image](https://github.com/user-attachments/assets/9f78c50f-42ba-46c2-808e-bd845827435d)
+- CWeaponComponent는 전반적인 무기의 상태를 관리하는 클래스입니다.
+- Delegate와 Enum을 사용하여 현재 장착중인 무기를 추적합니다.
+- Animation Notify를 사용하여 무기 장착, 공격, 해제 등의 상태 변화를 감지합니다.
+
+  2️⃣ 무기 동작을 담당하는 CDoAction과 CSubAction
+![image](https://github.com/user-attachments/assets/b20a3344-a463-43d2-aa6e-7dda9491a5e7)
+  - CDoAction → 메인 동작(마우스 1번) 담당
+  - CSubAction → 서브 동작(마우스 2번) 담당
+  ➡ 각 무기별로 서로 다른 공격 방식을 깔끔하게 분리되도록 설계하였습니다.
+
+  3️⃣ 무기의 동작의 구조
+  - 메인 동작과 서브 동작을 상속받는 형태의 구조로 정리하였습니다.
+![image](https://github.com/user-attachments/assets/48dc2ebf-1e50-4a87-9122-c3f4fc0d90ae)
+- 각 무기별로 오버라이드하여 다른 동작을 실행하도록 구현하였습니다.
+- 구조를 깔끔하게 정리하여 유지보수성을 높일 수 있게 설계하였습니다.
+
+  </details>
+
+
+
+
+
+
+
 
 ### 💥 충돌 시스템 개선
 - AABB(Axis-Aligned Bounding Box) 충돌
