@@ -159,6 +159,17 @@ U06_Battle.uproject 우 클릭 후,
 
 ### 카메라 시스템
 
+ <details>
+  <summary>🎇 자세히 보기 </summary>
+   
+![image](https://github.com/user-attachments/assets/ec1e17c7-2260-4108-8bd0-2af45686f0ea)
+Animation Notify를 통해 CameraShake를 설정하였습니다.
+![image](https://github.com/user-attachments/assets/b5028ef3-ba8c-4165-9ef0-80b6c01982a3)
+![image](https://github.com/user-attachments/assets/8e67961d-52e2-4b2d-8b5b-3ae8e055d93e)
+![image](https://github.com/user-attachments/assets/4d39d628-11b4-428f-b603-ac67fd6cddba)
+
+</details>
+
 
 
 ## ⚡ 프로젝트 최적화 과정
