@@ -55,6 +55,8 @@ U06_Battle.uproject 우 클릭 후,
 #### C++로 작성한 클래스 다이어그램
 ![image](https://github.com/user-attachments/assets/b1a34e98-9cdb-46c9-850e-4ba462f5a062)
 
+
+
 ## 🔄 진행 및 개선 사항
 
 ### 🔀 애니메이션 시스템
@@ -133,26 +135,6 @@ U06_Battle.uproject 우 클릭 후,
 
 
 
-
-
-
-
-### 💥 충돌 시스템 개선
-- AABB(Axis-Aligned Bounding Box) 충돌
-
-X, Y 축에 정렬된 직사각형 충돌 방식으로, 회전이 없으며 빠른 충돌 검사가 가능합니다.
-연산이 적어 효율적이라는 장점이 있습니다.
-<div align="left"> <img src="https://github.com/user-attachments/assets/b85f1793-ee27-426f-9917-fbb5e7653215" width="550" style="float: left; margin-right: 15px;"> </div>
-
-<br><br>
-
-- OBB(Oriented Bounding Box) 충돌
-
-회전이 고려된 충돌 방식으로, 정확한 충돌 판정 가능합니다.
-벡터 연산(내적) 과정으로 연산이 많아 회전이 필요한 오브젝트나 복잡한 충돌 처리가 필요한 경우 사용합니다.
-<div align="left"> <img src="https://github.com/user-attachments/assets/de75111d-7c82-4e65-884f-9448e3563e9b" width="800" style="float: left; margin-right: 15px;"> </div>
-
-
 ## ⚡ 프로젝트 최적화 과정
 ### ✨ C++ 와 블루프린트 연계 
 - `BlueprintNativeEvent`, `BlueprintImplementableEvent`, `BlueprintCallable`을 활용하여 C++과 Blueprint 사이에서 연동하였습니다.
@@ -198,8 +180,18 @@ UDataAsset을 활용한 무기 데이터를 저장합니다.
 #### Data Asset(DA)
 ![image](https://github.com/user-attachments/assets/f3ef49ea-c5b3-4774-8858-357ec79cb2f6)<br>
 각 무기별로 데이터 에셋을 생성합니다.
+![image](https://github.com/user-attachments/assets/3de8ab04-22b9-4cdf-9647-26429bcf2331)
+무기 상태를 관리하는 'CWeaponComponent'클래스에 무기별 데이터 에셋을 적용합니다.
+
 
 </details>
+
+### 인터페이스 활용
+![image](https://github.com/user-attachments/assets/19a4760b-7e05-4921-b792-00db1d911d52)
+- Player와 Enemy는 ACharacter를 상속받았기 때문에, 공통된 기능을 인터페이스를 통해 구현하였습니다.
+- 특정 클래스에 종속되지 않고, 기능을 확장할 수 있도록 인터페이스를 설계하였습니다.
+
+
 
 <br><br>
 
@@ -212,5 +204,5 @@ Win32 API와 C++을 활용하여 게임 엔진을 직접 구현하면서 `저수
 이러한 저수준 프로그래밍 경험은 향후 Unity, Unreal Engine과 같은 상용 엔진을 다룰 때 엔진의 내부 동작을 깊이 이해하는 데 도움이 될 것이라 생각합니다. 
 또한, 엔진의 기본 구조를 직접 구현해 본 경험이 최적화와 커스텀 렌더링 파이프라인 설계 등의 고급 기술을 익히는 데 중요한 밑바탕이 될 것이라 기대됩니다.
 
-#### 플레이 영상 : [https://www.youtube.com/watch?v=XatDEKotysU](https://www.youtube.com/watch?v=XatDEKotysU)
-![Image](https://github.com/user-attachments/assets/dc7bb543-bf0f-438f-9ed1-de4550a6c23a)
+#### 플레이 영상 : [https://www.youtube.com/watch?v=zs6bJYGYkTU&t=3s]([https://www.youtube.com/watch?v=XatDEKotysU](https://www.youtube.com/watch?v=zs6bJYGYkTU&t=3s))
+![Image](https://github.com/user-attachments/assets/dc303b46-610b-4fa0-b60b-5fb53bd18b29)
