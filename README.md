@@ -80,7 +80,7 @@ U06_Battle.uproject 우 클릭 후,
 ![image](https://github.com/user-attachments/assets/db1259a0-3e19-48ff-8c54-f12d365f7944)
 - 'UCAnimInstance'에서 현재 장착 중인 무기 상태를 받아서, EWeapon Type(Enum)형식에 따라 애니메이션이 나오게 적용하였습니다.
 
-<details>
+</details>
 
 #### Aim Offset을 활용한 상체 애니메이션 보정
 
@@ -97,7 +97,7 @@ U06_Battle.uproject 우 클릭 후,
 ![image](https://github.com/user-attachments/assets/e6ae68a0-4200-493d-b601-8f3141fe4689)
 조준 중일 시 AO(Aim Offset)값을 적용(UCAnimInstance 에서 동작)하여, 'spine_01'부위를 기준으로, 위/아래를 볼 수 있도록 상체 회전되도록 적용하였습니다.
 
-<details>
+</details>
 
 ### 🤖 AI 시스템 개선
 `AStar` 알고리즘을 활용하여 최적의 경로 탐색을 구현하였습니다.
