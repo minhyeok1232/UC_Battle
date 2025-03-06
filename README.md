@@ -178,6 +178,10 @@ X, Y 축에 정렬된 직사각형 충돌 방식으로, 회전이 없으며 �
 <br><br>
 
 ### 데이터 에셋을 활용
+
+<details>
+  <summary>🎇 자세히 보기 </summary>
+
 #### CWeaponStructures.h
 ![image](https://github.com/user-attachments/assets/759f1a4d-3a63-4971-848f-f031a4f6f682)<br>
 각 무기마다 데이터 구조체를 사용하여 저장합니다.
@@ -195,7 +199,7 @@ UDataAsset을 활용한 무기 데이터를 저장합니다.
 ![image](https://github.com/user-attachments/assets/f3ef49ea-c5b3-4774-8858-357ec79cb2f6)<br>
 각 무기별로 데이터 에셋을 생성합니다.
 
-
+</details>
 
 <br><br>
 
