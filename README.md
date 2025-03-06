@@ -43,8 +43,6 @@ U06_Battle.uproject 우 클릭 후,
 솔루션 빌드 (Ctrl + B) 완료 후,<br>
 ✅ U06_Battle.uproject 클릭하여 실행
 
-
-
 </details>
 
 
@@ -60,24 +58,45 @@ U06_Battle.uproject 우 클릭 후,
 ## 🔄 진행 및 개선 사항
 
 ### 🔀 애니메이션 시스템
-- BS(Blend Space)를 활용하여 걷기, 뛰기, 달리기 등 자연스럽게 전환하였습니다.
 - Montage 및 Notify 시스템을 활용하여 애니메이션의 특정 타이밍을 조정하였습니다.
 #### Animation Montage에 특정 시점에 Notify를 조정
 ![image](https://github.com/user-attachments/assets/7bfad7e6-4812-43b6-91a6-e62bf2a667d2)
 ![image](https://github.com/user-attachments/assets/08bbc26c-610d-4808-9114-0b47045459cc)
 
 
-#### 무기별 애니메이션 로직 분리
-- 일반 무기는 CAnimInstance에서 기본 상태 머신을 통해 관리하였습니다.
-- Bow는 CAnimInstance_Bow에서 별도의 애니메이션 레이어를 적용하여 특수 동작을 구현하였습니다.
-![image](https://github.com/user-attachments/assets/59b06b8b-e2da-4640-9615-5965b3b568dc)
+#### 애니메이션 시스템 및 무기별 애니메이션 로직 분리
+<details>
+  <summary>🎇 자세히 보기 </summary>
+  
+![image](https://github.com/user-attachments/assets/f7f296ff-1ac3-42be-beb8-3145baca1aac)
+- 각 무기마다 스테이트 머신을 통해 분리를 하였습니다.
+![image](https://github.com/user-attachments/assets/8ec5daed-2989-4577-9562-46008f96163e)
+- BS(Blend Space)를 활용하여 Speed값에 따라 걷기, 뛰기, 달리기의 애니메이션을 자연스럽게 전환하였습니다.
+![image](https://github.com/user-attachments/assets/3d6971d2-f4aa-49ed-a732-8cb051c6beb4)
+- 'UCAnimInstance(UAnimInstance 상속)'에서 애니메이션 상태 머신을 관리하였습니다.
+![image](https://github.com/user-attachments/assets/72fbc994-2f7c-4422-bcb8-4991481a8170)
+- Bow(활) 상태는 일반 무기와 달리 기본/조준 포즈의 동작이 다르기 때문에, 새로운 Layer를 만들어서 분리하였습니다.
+![image](https://github.com/user-attachments/assets/db1259a0-3e19-48ff-8c54-f12d365f7944)
+- 'UCAnimInstance'에서 현재 장착 중인 무기 상태를 받아서, EWeapon Type(Enum)형식에 따라 애니메이션이 나오게 적용하였습니다.
+
+<details>
 
 #### Aim Offset을 활용한 상체 애니메이션 보정
-AO(Aim Offset)을 적용하여 캐릭터가 특정 방향을 바라볼 때 상체 애니메이션을 자연스럽게 조정하였습니다.
-조준 시(Bow_Aim) Blend Space와 결합(특정 Bone)하여 AO(Aim Offset)을 적용하였습니다.
-![image](https://github.com/user-attachments/assets/fcc21486-9f06-4afb-901f-3fdd6021a540)
 
+<details>
+  <summary>🎇 자세히 보기 </summary>
 
+- Bow(활)의 기본/조준 포즈의 동작을 bool로 포즈 블렌딩'을 통해 나누었습니다.
+![image](https://github.com/user-attachments/assets/3b67a0bf-f1a2-47a9-b517-421149b4438d)
+- 조준 중일 때는 'spine_02' 부위를 기준으로 해서 상체와 하체의 동작을 분리시켰습니다.
+![image](https://github.com/user-attachments/assets/3c6445df-67df-4b7d-9e16-1eb594eabc15)
+#### 하체는 이동하지만, 상체는 조준 중
+![Image](https://github.com/user-attachments/assets/aa6df790-316f-4a23-9de6-bb5a58554772)
+
+![image](https://github.com/user-attachments/assets/e6ae68a0-4200-493d-b601-8f3141fe4689)
+조준 중일 시 AO(Aim Offset)값을 적용(UCAnimInstance 에서 동작)하여, 'spine_01'부위를 기준으로, 위/아래를 볼 수 있도록 상체 회전되도록 적용하였습니다.
+
+<details>
 
 ### 🤖 AI 시스템 개선
 `AStar` 알고리즘을 활용하여 최적의 경로 탐색을 구현하였습니다.
