@@ -161,16 +161,24 @@ U06_Battle.uproject 우 클릭 후,
 
  <details>
   <summary>🎇 자세히 보기 </summary>
-   
-![image](https://github.com/user-attachments/assets/ec1e17c7-2260-4108-8bd0-2af45686f0ea)
-- Animation Notify를 활용하여 특정 프레임에서 Camera Shake 실행하였습니다. <br>
-![image](https://github.com/user-attachments/assets/2435570c-cf83-4043-877d-2d075bc4e11c)
-- 'CameraAnim'이 들어오면서 Notify_Begin으로 시작을 합니다.
-- 
 
-![image](https://github.com/user-attachments/assets/8e67961d-52e2-4b2d-8b5b-3ae8e055d93e)
-![image](https://github.com/user-attachments/assets/4d39d628-11b4-428f-b603-ac67fd6cddba)
-- Camera Animation을 생성하여, 
+#### Camera Animation
+#### 카메라의 이동 경로와 회전값을 미리 지정하여 부드러운 연출 가능
+![image](https://github.com/user-attachments/assets/ec1e17c7-2260-4108-8bd0-2af45686f0ea)
+- 특정 애니메이션 프레임에서 Animation Notify를 사용하여 Camera Shake 실행하였습니다.<br>
+![image](https://github.com/user-attachments/assets/2435570c-cf83-4043-877d-2d075bc4e11c)
+- 'CameraAnim이 실행되면서 Notify_Begin에서 Camera Animation이 시작됩니다.
+![image](https://github.com/user-attachments/assets/32559555-07fa-4b47-9446-19425d082621)
+- UCameraModifier를 상속받은 UCCameraModifier에서 Camera Animation 역할을 수행합니다.
+- SetLocation() 및 SetRotation()을 통해 카메라의 이동 및 회전을 설정합니다.
+![image](https://github.com/user-attachments/assets/f02ebc7b-4a87-467d-b2a6-7b50f59949d2)
+- Camera Animation으로 생성된 CA_Fist에서 특정 구간에 키(Key)를 추가하여 좌표를 설정합니다.
+
+#### Matinee Camera Shake
+![image](https://github.com/user-attachments/assets/2b4568a8-41df-457a-9c5f-3fe22ebd549a)
+Matinee를 사용하여 특정 시간에 맞춰 Camera Shake를 실행합니다.
+![image](https://github.com/user-attachments/assets/f774e798-236d-4036-8647-ae46ffef4a96)
+
 
 </details>
 
