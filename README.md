@@ -164,7 +164,10 @@ U06_Battle.uproject 우 클릭 후,
    
 ![image](https://github.com/user-attachments/assets/ec1e17c7-2260-4108-8bd0-2af45686f0ea)
 - Animation Notify를 활용하여 특정 프레임에서 Camera Shake 실행하였습니다. <br>
-![image](https://github.com/user-attachments/assets/b5028ef3-ba8c-4165-9ef0-80b6c01982a3)
+![image](https://github.com/user-attachments/assets/2435570c-cf83-4043-877d-2d075bc4e11c)
+- 'CameraAnim'이 들어오면서 Notify_Begin으로 시작을 합니다.
+- 
+
 ![image](https://github.com/user-attachments/assets/8e67961d-52e2-4b2d-8b5b-3ae8e055d93e)
 ![image](https://github.com/user-attachments/assets/4d39d628-11b4-428f-b603-ac67fd6cddba)
 - Camera Animation을 생성하여, 
