@@ -246,14 +246,5 @@ UDataAsset을 활용한 무기 데이터를 저장합니다.
 
 <br><br>
 
-## 📝 개발 관점에서의 느낀 점
-Win32 API와 C++을 활용하여 게임 엔진을 직접 구현하면서 `저수준 프로그래밍`의 중요성을 체감할 수 있었습니다.
-
-단순한 비트맵 파일을 로드하는 과정조차도 많은 양의 코드가 필요했으며, 윈도우 핸들, 디바이스 컨텍스트 등의 시스템 객체를 다루면서 `하드웨어와`의 `인터페이스`에 대해 이해하게 되었습니다. 
-이러한 경험을 통해 시스템 아키텍처와 그래픽 렌더링의 원리를 파악할 수 있었습니다.
-
-이러한 저수준 프로그래밍 경험은 향후 Unity, Unreal Engine과 같은 상용 엔진을 다룰 때 엔진의 내부 동작을 깊이 이해하는 데 도움이 될 것이라 생각합니다. 
-또한, 엔진의 기본 구조를 직접 구현해 본 경험이 최적화와 커스텀 렌더링 파이프라인 설계 등의 고급 기술을 익히는 데 중요한 밑바탕이 될 것이라 기대됩니다.
-
 #### 플레이 영상 : [https://www.youtube.com/watch?v=zs6bJYGYkTU&t=3s]([https://www.youtube.com/watch?v=XatDEKotysU](https://www.youtube.com/watch?v=zs6bJYGYkTU&t=3s))
 ![Image](https://github.com/user-attachments/assets/dc303b46-610b-4fa0-b60b-5fb53bd18b29)
