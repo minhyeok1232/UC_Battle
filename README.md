@@ -58,13 +58,13 @@ U06_Battle.uproject 우 클릭 후,
   <summary> 주요 클래스 설명 </summary>
 
 #### Characters Script
-- CAnimInstance : 애니메이션 블루프린트와 연동하여, 캐릭터의 모션을 처리하는 클래스
-- ICharacter : 캐릭터의 공통 기능(머터리얼 변경 등)을 정의하는 인터페이스
-- CPlayer : 플레이어 캐릭터의 입력, 무기 변경, 회피 등의 기능을 담당하는 클래스
-- CEnemy : 적 AI의 상태, 피격 반응, 사망 등을 처리하는 클래스
+- CAnimInstance : 애니메이션 블루프린트와 연동하여, 캐릭터의 애니메이션을 처리하는 클래스
+- ICharacter : 캐릭터의 공통 기능을 정의하는 인터페이스
+- CPlayer : 플레이어 캐릭터의 입력 등의 기능을 담당하는 클래스
+- CEnemy : 적 AI의 상태를 처리하는 클래스
 
 #### Components Script
-- CMontageComponent.cpp → 애니메이션 몽타주를 관리하는 클래스
+- CMontageComponent.cpp : 애니메이션 몽타주를 관리하는 클래스
 - CMovementComponent : 캐릭터 이동을 관리하는 클래스
 - CStateComponent : 캐릭터의 상태머신(FSM)을 관리하는 클래스
 - CStatusComponent : 체력 및 스탯(HP, 데미지 등)과 관련된 데이터를 관리하는 클래스
