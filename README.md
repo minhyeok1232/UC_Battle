@@ -162,11 +162,12 @@ U06_Battle.uproject 우 클릭 후,
  <details>
   <summary>🎇 자세히 보기 </summary>
 
-#### Camera Animation
+#### Matinee Camera Shake, Camera Animation
 #### 카메라의 이동 경로와 회전값을 미리 지정하여 부드러운 연출 가능
 ![image](https://github.com/user-attachments/assets/ec1e17c7-2260-4108-8bd0-2af45686f0ea)
-- 특정 애니메이션 프레임에서 Animation Notify를 사용하여 Camera Shake 실행하였습니다.<br>
+- 특정 애니메이션 프레임에서 Animation Notify를 사용하였습니다. <br>
 ![image](https://github.com/user-attachments/assets/2435570c-cf83-4043-877d-2d075bc4e11c)
+![image](https://github.com/user-attachments/assets/2b4568a8-41df-457a-9c5f-3fe22ebd549a) 
 - 'CameraAnim이 실행되면서 Notify_Begin에서 Camera Animation이 시작됩니다.
 ![image](https://github.com/user-attachments/assets/32559555-07fa-4b47-9446-19425d082621)
 - UCameraModifier를 상속받은 UCCameraModifier에서 Camera Animation 역할을 수행합니다.
@@ -175,10 +176,8 @@ U06_Battle.uproject 우 클릭 후,
 - Camera Animation으로 생성된 CA_Fist에서 특정 구간에 키(Key)를 추가하여 좌표를 설정합니다.
 
 #### Matinee Camera Shake
-![image](https://github.com/user-attachments/assets/2b4568a8-41df-457a-9c5f-3fe22ebd549a)
-Matinee를 사용하여 특정 시간에 맞춰 Camera Shake를 실행합니다.
-![image](https://github.com/user-attachments/assets/f774e798-236d-4036-8647-ae46ffef4a96)
-
+![image](https://github.com/user-attachments/assets/2b4568a8-41df-457a-9c5f-3fe22ebd549a) <br>
+마찬가지로, 특정 애니메이션 프레임에서 Animation Notify를 사용하였습니다.
 
 </details>
 
