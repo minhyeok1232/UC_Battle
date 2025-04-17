@@ -11,7 +11,7 @@ Unreal 4.26 기반의 3D 배틀 게임입니다.
 ---
 
 ## 🔎 프로젝트 소개
-- **장르** : 3D Battle Game
+- **장르** : 3D Battle Game 
 - **Engine** : Unreal Engine 4.26
 - **IDE** : JetBrains Rider
 - **목적** :
@@ -20,10 +20,10 @@ Unreal 4.26 기반의 3D 배틀 게임입니다.
   - BP(블루프린트)에 컴퍼넌트를 추가하여 모듈화된 구조를 설계
 
 <details>
-  <summary>🎇 프로젝트 실행 방법</summary>
+  <summary>🎇 프로젝트 실행 방법</summary> 
 
 ### 1️⃣ Git Clone
-  ```bash
+  ```bash 
   git clone https://github.com/minhyeok1232/UC_Battle.git
 ```
 ### 2️⃣ 파일 경로
