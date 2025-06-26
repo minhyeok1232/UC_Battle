@@ -12,10 +12,10 @@ Unreal 4.26 기반의 3D 배틀 게임입니다.
 
 ## 🔎 프로젝트 소개
 - **장르** : 3D Battle Game 
-- **Engine** : Unreal Engine 4.26 
+- **Engine** : Unreal Engine 4.26     
 - **IDE** : JetBrains Rider
 - **목적** :
-  - 무기 및 전투 시스템의 확장성을 고려한 클래스 구조 설계
+  - 무기 및 전투 시스템의 확장성을 고려한 클래스 구조 설계  
   - ABP(애니메이션 블루프린트)와, Animation Notify를 통해 전투 이펙트 및 상태 전환을 학습
   - BP(블루프린트)에 컴퍼넌트를 추가하여 모듈화된 구조를 설계
 
